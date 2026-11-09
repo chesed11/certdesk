@@ -1,0 +1,11 @@
+[Unit]
+Description=Certdesk certificate renewal schedule
+
+[Timer]
+OnCalendar=*-*-* 00,12:00:00
+RandomizedDelaySec=15min
+Persistent=true
+Unit=certdesk-renew.service
+
+[Install]
+WantedBy=timers.target

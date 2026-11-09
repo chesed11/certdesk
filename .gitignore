@@ -1,0 +1,34 @@
+# Local certificate inventory, database and runtime output
+/data/
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.log
+
+# Private keys, certificate material and locally stored credentials
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+.env
+.env.*
+!.env.example
+managed.json
+
+# Python, virtual environments and editor / OS caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
